@@ -15,7 +15,7 @@
           group-hover:opacity-100
           duration-300
           border-t border-light-100/25
-          backdrop-blur
+          backdrop-filter backdrop-blur-sm
         "
       >
         <div
