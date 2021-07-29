@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto">
+  <main class="container mx-auto px-3">
     <transition name="fade">
       <loader v-if="$fetchState.pending" class="h-24" />
       <div v-else class="container mx-auto pt-3">

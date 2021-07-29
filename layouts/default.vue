@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header class="bg-red-600 py-3 <md:px-3">
-      <div class="container mx-auto flex justify-between">
+    <header class="bg-red-600">
+      <div class="container mx-auto flex justify-between p-3">
         <nuxt-link to="/">
           <Logo class="text-white" />
         </nuxt-link>
