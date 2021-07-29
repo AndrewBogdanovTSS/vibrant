@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <main class="container mx-auto">
     <transition name="fade">
       <loader v-if="$fetchState.pending" class="h-24" />
       <div v-else class="container mx-auto pt-3">
-        <masonry :cols="3">
+        <masonry :cols="3" :gutter="12">
           <drawing v-for="drawing in drawings" :item="drawing" :key="drawing.id" />
         </masonry>
       </div>

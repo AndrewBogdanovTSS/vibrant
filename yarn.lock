@@ -8102,13 +8102,6 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-v-tostini@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/v-tostini/-/v-tostini-1.5.1.tgz#9b3f2e9cb9f2c3052d1a2f0fb4dde8281019c037"
-  integrity sha512-/2skgPs8F56iUM8I2K+dIL/AMZx3WXH98SNznU6Kr9A0qoNEYE19q7/JUYrmYkAE6nMBh1v4q37uuyobQ7vPUQ==
-  dependencies:
-    vue "^2.6.12"
-
 vary@^1.1.2, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"

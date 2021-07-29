@@ -1,6 +1,6 @@
 <template>
   <transition name="fade" appear>
-    <div class="relative block mb-3 mr-3 group hover:cursor-pointer">
+    <div class="relative block mb-3 group hover:cursor-pointer">
       <div
         class="
           absolute
