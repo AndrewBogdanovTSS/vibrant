@@ -1,0 +1,27 @@
+.page {
+  &-enter,
+  &-leave-active {
+    @apply opacity-0;
+  }
+
+  &-enter,
+  &-leave {
+    &-active {
+      @apply transition-opacity duration-300 ease-out;
+    }
+  }
+}
+
+.fade {
+  &-enter,
+  &-leave-active {
+    @apply opacity-0;
+  }
+
+  &-enter,
+  &-leave {
+    &-active {
+      @apply transition-opacity duration-300 ease-out;
+    }
+  }
+}
