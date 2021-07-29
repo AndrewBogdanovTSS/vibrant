@@ -1,5 +1,3 @@
-export const wait = ms => new Promise(resolve => setTimeout(resolve, ms))
-
 export const downloadObjectAsJson = (exportObj, exportName) => {
   const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(exportObj))
   const downloadAnchorNode = document.createElement('a')

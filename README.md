@@ -1,6 +1,6 @@
-# nuxt-windi
+# MET Vibrant Color - Client
 
-## Build Setup
+## How to run
 
 ```bash
 # install dependencies

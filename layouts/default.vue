@@ -5,28 +5,28 @@
         <Logo class="text-white" />
       </nuxt-link>
       <button
-        @click="downloadObjectAsJson(objects)"
+        @click="saveJSON"
         class="bg-white rounded-full px-3 py-2 border-2 border-transparent hover:border-red-500 duration-300"
       >
         Download JSON
       </button>
     </header>
-    <Nuxt keep-alive />
+    <Nuxt />
   </div>
 </template>
 
 <script>
   import {mapState} from 'vuex'
-  import Logo from '@/components/Logo.vue'
   import {downloadObjectAsJson} from '@/utils'
 
   export default {
-    components: {Logo},
     computed: {
-      ...mapState(['objects'])
+      ...mapState(['drawings'])
     },
     methods: {
-      downloadObjectAsJson
+      saveJSON() {
+        downloadObjectAsJson(this.drawings, 'drawings')
+      }
     }
   }
 </script>

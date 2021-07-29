@@ -1,7 +1,5 @@
-import Vue from 'vue'
-
 export const state = () => ({
-  objects: {}
+  drawings: []
 })
 
 export const getters = {
@@ -9,15 +7,14 @@ export const getters = {
 }
 
 export const mutations = {
-  addObject(state, obj) {
-    Vue.set(state.objects, obj.id, obj)
+  setDrawings(state, drawings) {
+    state.drawings = drawings
   }
 }
 
 export const actions = {
-  async getObject({commit}, link) {
-    const object = await this.$axios.$get(link)
-    console.log('object:', object)
-    if (object.primaryImageSmall) commit('addObject', {id: object.objectID, image: object.primaryImageSmall})
+  async getDrawings({commit}) {
+    const drawings = await this.$axios.$get('/drawings')
+    commit('setDrawings', drawings)
   }
 }
